@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Post
+    for path in asset.js
+      script(src=path)
+    for path in asset.css
+      link(rel="stylesheet", href=path)
+  body
+    .row.mt-3.justify-content-center
+      .col-md-8
+        for post in posts
+          .card.mt-3
+            .card-body
+              h1.card-title= post.title
+              p.card-text= post.post
