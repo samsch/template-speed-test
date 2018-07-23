@@ -1,5 +1,7 @@
 [Measurement tool](https://github.com/rakyll/hey)
 
+[Inspired by](https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js)
+
 Run command:
 
 `~/go/bin/hey -c $C -z 5s http://localhost:3400/$T`
