@@ -1,14 +1,16 @@
-[Measurement tool](https://github.com/rakyll/hey)
-
 [Inspired by](https://malloc.fi/performance-cost-of-server-side-rendered-react-node-js)
 
-Run command:
+## Test methodology
 
-`~/go/bin/hey -c $C -z 5s http://localhost:3400/$T`
+[Measurement tool: hey](https://github.com/rakyll/hey)
+
+Run command: `~/go/bin/hey -c $C -z 5s http://localhost:3400/$T`
 
 Where "$C" is the concurrency (1, 5, 50, 500), and "$T" is the templating engine route (`pug`, `hyperscript`, `react`, `preact`).
 
 Each test is run twice, using the results from the second test.
+
+Because of the relatively small scale of the tests, these numbers should not be considered particularly precise.
 
 ## Requests per second
 
